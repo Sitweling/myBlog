@@ -542,7 +542,7 @@ java.lang.ArithmeticException: / by zero
 2022-04-06 16:48:35.825  INFO 16952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2022-04-06 16:48:35.885 ERROR 16952 --- [http-nio-8080-exec-1] c.s.handler.ControllerExceptionHandler   : Request URL: http://localhost:8080/, Exception: {} 
 
-com.sinn.exception.NotFoundBlogException: 博客不存在
+com.sinn.exception.NotFoundException: 博客不存在
 	at com.sinn.controller.indexController.index(indexController.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -595,7 +595,7 @@ com.sinn.exception.NotFoundBlogException: 博客不存在
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 
-2022-04-06 16:48:35.888  WARN 16952 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.sinn.exception.NotFoundBlogException: 博客不存在]
+2022-04-06 16:48:35.888  WARN 16952 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.sinn.exception.NotFoundException: 博客不存在]
 2022-04-06 16:48:35.990 ERROR 16952 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "error/error": An error happened during template parsing (template: "class path resource [templates/error/error.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/error/error.html]")
@@ -783,7 +783,7 @@ java.lang.IllegalArgumentException: Input cannot be null
 2022-04-06 16:49:15.475  INFO 21480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2022-04-06 16:49:15.540 ERROR 21480 --- [http-nio-8080-exec-1] c.s.handler.ControllerExceptionHandler   : Request URL: http://localhost:8080/, Exception: {} 
 
-com.sinn.exception.NotFoundBlogException: 博客不存在
+com.sinn.exception.NotFoundException: 博客不存在
 	at com.sinn.controller.indexController.index(indexController.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -836,7 +836,7 @@ com.sinn.exception.NotFoundBlogException: 博客不存在
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 
-2022-04-06 16:49:15.544  WARN 21480 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.sinn.exception.NotFoundBlogException: 博客不存在]
+2022-04-06 16:49:15.544  WARN 21480 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.sinn.exception.NotFoundException: 博客不存在]
 2022-04-06 16:52:20.587  INFO 21480 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-04-06 16:52:20.590  INFO 21480 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-04-06 16:52:20.598  INFO 21480 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
@@ -871,7 +871,7 @@ com.sinn.exception.NotFoundBlogException: 博客不存在
 2022-04-06 16:52:26.775  INFO 21072 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
 2022-04-06 16:52:26.839 ERROR 21072 --- [http-nio-8080-exec-1] c.s.handler.ControllerExceptionHandler   : Request URL: http://localhost:8080/, Exception: {} 
 
-com.sinn.exception.NotFoundBlogException: 博客不存在
+com.sinn.exception.NotFoundException: 博客不存在
 	at com.sinn.controller.indexController.index(indexController.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -924,4 +924,4 @@ com.sinn.exception.NotFoundBlogException: 博客不存在
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 
-2022-04-06 16:52:26.842  WARN 21072 --- [http-nio-8080-exec-1] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [com.sinn.exception.NotFoundBlogException: 博客不存在]
+2022-04-06 16:52:26.842  WARN 21072 --- [http-nio-8080-exec-1] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [com.sinn.exception.NotFoundException: 博客不存在]

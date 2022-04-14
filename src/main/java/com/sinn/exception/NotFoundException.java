@@ -9,15 +9,15 @@ import org.springframework.web.bind.annotation.ResponseStatus;
  * @CreateTime: 2022/4/6
  */
 @ResponseStatus(HttpStatus.NOT_FOUND)
-public class NotFoundBlogException extends RuntimeException {
-    public NotFoundBlogException() {
+public class NotFoundException extends RuntimeException {
+    public NotFoundException() {
     }
 
-    public NotFoundBlogException(String message) {
+    public NotFoundException(String message) {
         super(message);
     }
 
-    public NotFoundBlogException(String message, Throwable cause) {
+    public NotFoundException(String message, Throwable cause) {
         super(message, cause);
     }
 }
