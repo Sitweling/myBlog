@@ -94,7 +94,7 @@
 2022-04-06 15:52:23.953 ERROR 6308 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
 
 java.lang.ArithmeticException: / by zero
-	at com.sinn.web.indexController.index(indexController.java:15)
+	at com.sinn.controller.indexController.index(indexController.java:15)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -259,7 +259,7 @@ java.lang.ArithmeticException: / by zero
 2022-04-06 16:35:08.403 ERROR 6308 --- [http-nio-8080-exec-1] c.s.handler.ControllerExceptionHandler   : Request URL: http://localhost:8080/, Exception :{}
 
 java.lang.ArithmeticException: / by zero
-	at com.sinn.web.indexController.index(indexController.java:15)
+	at com.sinn.controller.indexController.index(indexController.java:15)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -370,7 +370,7 @@ java.lang.ArithmeticException: / by zero
 2022-04-06 16:36:14.710 ERROR 6308 --- [http-nio-8080-exec-1] c.s.handler.ControllerExceptionHandler   : Request URL: http://localhost:8080/, Exception : {}
 
 java.lang.ArithmeticException: / by zero
-	at com.sinn.web.indexController.index(indexController.java:15)
+	at com.sinn.controller.indexController.index(indexController.java:15)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -455,7 +455,7 @@ java.lang.ArithmeticException: / by zero
 2022-04-06 16:36:44.646 ERROR 6308 --- [http-nio-8080-exec-2] c.s.handler.ControllerExceptionHandler   : Request URL: http://localhost:8080/, Exception: {} 
 
 java.lang.ArithmeticException: / by zero
-	at com.sinn.web.indexController.index(indexController.java:15)
+	at com.sinn.controller.indexController.index(indexController.java:15)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -543,7 +543,7 @@ java.lang.ArithmeticException: / by zero
 2022-04-06 16:48:35.885 ERROR 16952 --- [http-nio-8080-exec-1] c.s.handler.ControllerExceptionHandler   : Request URL: http://localhost:8080/, Exception: {} 
 
 com.sinn.exception.NotFoundBlogException: 博客不存在
-	at com.sinn.web.indexController.index(indexController.java:19)
+	at com.sinn.controller.indexController.index(indexController.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -784,7 +784,7 @@ java.lang.IllegalArgumentException: Input cannot be null
 2022-04-06 16:49:15.540 ERROR 21480 --- [http-nio-8080-exec-1] c.s.handler.ControllerExceptionHandler   : Request URL: http://localhost:8080/, Exception: {} 
 
 com.sinn.exception.NotFoundBlogException: 博客不存在
-	at com.sinn.web.indexController.index(indexController.java:19)
+	at com.sinn.controller.indexController.index(indexController.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -872,7 +872,7 @@ com.sinn.exception.NotFoundBlogException: 博客不存在
 2022-04-06 16:52:26.839 ERROR 21072 --- [http-nio-8080-exec-1] c.s.handler.ControllerExceptionHandler   : Request URL: http://localhost:8080/, Exception: {} 
 
 com.sinn.exception.NotFoundBlogException: 博客不存在
-	at com.sinn.web.indexController.index(indexController.java:19)
+	at com.sinn.controller.indexController.index(indexController.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

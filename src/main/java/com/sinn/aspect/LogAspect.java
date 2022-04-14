@@ -22,7 +22,7 @@ public class LogAspect {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    @Pointcut("execution(* com.sinn.web.*.*(..))")      // 返回值 包名.类名.方法名.(参数) 定义切面
+    @Pointcut("execution(* com.sinn.controller.*.*(..))")      // 返回值 包名.类名.方法名.(参数) 定义切面
     public void log(){}
 
     @Before("log()")
