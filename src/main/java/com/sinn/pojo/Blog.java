@@ -36,6 +36,41 @@ public class Blog {
     @ManyToMany(cascade = {CascadeType.PERSIST})
     private List<Tag> tags=new ArrayList<>();
 
+    @Transient
+    private String tagIds;
+
+    @Override
+    public String toString() {
+        return "Blog{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", firstPicture='" + firstPicture + '\'' +
+                ", flag='" + flag + '\'' +
+                ", views=" + views +
+                ", appreciation=" + appreciation +
+                ", shareStatement=" + shareStatement +
+                ", commentabled=" + commentabled +
+                ", published=" + published +
+                ", recommend=" + recommend +
+                ", createTime=" + createTime +
+                ", updateTime=" + updateTime +
+                ", type=" + type +
+                ", tags=" + tags +
+                ", tagIds='" + tagIds + '\'' +
+                ", user=" + user +
+                ", comments=" + comments +
+                '}';
+    }
+
+    public String getTagIds() {
+        return tagIds;
+    }
+
+    public void setTagIds(String tagIds) {
+        this.tagIds = tagIds;
+    }
+
     @ManyToOne
     private User user;
 
@@ -72,25 +107,6 @@ public class Blog {
 
     public void setType(Type type) {
         this.type = type;
-    }
-
-    @Override
-    public String toString() {
-        return "Blog{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", content='" + content + '\'' +
-                ", firstPicture='" + firstPicture + '\'' +
-                ", flag='" + flag + '\'' +
-                ", views=" + views +
-                ", appreciation=" + appreciation +
-                ", shareStatement=" + shareStatement +
-                ", commentabled=" + commentabled +
-                ", published=" + published +
-                ", recommend=" + recommend +
-                ", createTime=" + createTime +
-                ", updateTime=" + updateTime +
-                '}';
     }
 
     public Long getId() {
@@ -198,5 +214,27 @@ public class Blog {
     }
 
     public Blog() {
+    }
+
+    public void init(){
+        this.tagIds=tagsToIds(this.getTags());
+    }
+
+    private String tagsToIds(List<Tag> tags){
+        if(!tags.isEmpty()){
+            StringBuffer ids = new StringBuffer();
+            boolean flag = false;
+            for(Tag tag: tags){
+                if(flag){
+                    ids.append(",");
+                }else {
+                    flag = true;
+                }
+                ids.append(tag.getId());
+            }
+            return ids.toString();
+        }else {
+            return tagIds;
+        }
     }
 }
