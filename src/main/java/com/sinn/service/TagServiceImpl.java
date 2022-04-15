@@ -10,6 +10,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * @Description:
  * @Author: Sitweling
@@ -18,9 +20,15 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class TagServiceImpl implements TagService{
 
+
+
     @Autowired
     TagRepository tagRepository;
 
+    @Override
+    public List<Tag> listTag() {
+        return tagRepository.findAll();
+    }
     @Override
     @Transactional
     public Tag saveTag(Tag tag) {

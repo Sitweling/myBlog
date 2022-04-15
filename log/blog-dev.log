@@ -346,3 +346,33 @@ java.lang.NullPointerException: null
 2022-04-15 14:06:49.267  INFO 9068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2022-04-15 14:06:49.268  INFO 9068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2022-04-15 14:08:32.468  WARN 9068 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m44s928ms593µs800ns).
+2022-04-15 14:40:44.435  INFO 17664 --- [restartedMain] com.sinn.MyBlogApplication               : Starting MyBlogApplication using Java 11.0.14 on Si-Sarura with PID 17664 (D:\program_Code\myBlog\target\classes started by Sitweling in D:\program_Code\myBlog)
+2022-04-15 14:40:44.436 DEBUG 17664 --- [restartedMain] com.sinn.MyBlogApplication               : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-15 14:40:44.436  INFO 17664 --- [restartedMain] com.sinn.MyBlogApplication               : The following 1 profile is active: "dev"
+2022-04-15 14:40:44.465  INFO 17664 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-15 14:40:44.465  INFO 17664 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-15 14:40:44.941  INFO 17664 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-15 14:40:44.985  INFO 17664 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 4 JPA repository interfaces.
+2022-04-15 14:40:45.067  WARN 17664 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.sinn]' package. Please check your configuration.
+2022-04-15 14:40:45.497  INFO 17664 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-15 14:40:45.503  INFO 17664 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-15 14:40:45.503  INFO 17664 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-15 14:40:45.563  INFO 17664 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-15 14:40:45.563  INFO 17664 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1098 ms
+2022-04-15 14:40:45.700  INFO 17664 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-15 14:40:45.728  INFO 17664 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-15 14:40:45.806  INFO 17664 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-15 14:40:45.862  INFO 17664 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-15 14:40:46.044  INFO 17664 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-15 14:40:46.056  INFO 17664 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-04-15 14:40:46.550  INFO 17664 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-15 14:40:46.555  INFO 17664 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-15 14:40:47.080  WARN 17664 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-15 14:40:47.285  INFO 17664 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-15 14:40:47.571  INFO 17664 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-15 14:40:47.600  INFO 17664 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-15 14:40:47.607  INFO 17664 --- [restartedMain] com.sinn.MyBlogApplication               : Started MyBlogApplication in 3.543 seconds (JVM running for 4.927)
+2022-04-15 14:40:49.548  INFO 17664 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-15 14:40:49.550  INFO 17664 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-15 14:40:49.550  INFO 17664 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-04-15 14:40:54.573  WARN 17664 --- [http-nio-8080-exec-4] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [585] milliseconds.
