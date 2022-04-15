@@ -26,8 +26,8 @@
             <div class="right m-item m-mobile-hide menu">
                 <div class="ui dropdown item">
                     <div class="text">
-                        <img src="https://picsum.photos/id/76/100/100" alt="" class="ui avatar image">
-                        LKA
+                        <img src="https://picsum.photos/id/76/100/100" alt="" class="ui avatar image" th:src="@{${session.user.avatar}}">
+                        <span th:text="${session.user.nickname}">LKA</span>
                     </div>
                     <i class="dropdown icon"></i>
                     <div class="menu">
