@@ -24,7 +24,9 @@
         <div class="ui container">
             <form action="#" id="blog-form" th:object="${blog}" th:action="@{/admin/blogs}" method="post" class="ui form">
                 <input type="hidden" name="published">
-                <input type="hidden" name="updateTime">
+                <!--直接隐藏域会报错，为什么呢……-->
+<!--                <input type="hidden" name="updateTime">
+                <input type="hidden" name="createTime">-->
                 <input type="hidden" name="views">
                 <!--解释一下隐藏域的问题：
                     如果不带隐藏域，提交到后端的时候，Blog对象没有对应的字段内容。导致在更新的时候，没有传递的内容就为空，更新后丢失数据。

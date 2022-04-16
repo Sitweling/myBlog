@@ -5,6 +5,7 @@ import com.sinn.exception.NotFoundException;
 import com.sinn.pojo.Blog;
 import com.sinn.pojo.Type;
 import com.sinn.utils.BlogQuery;
+import com.sinn.utils.MarkdownUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -68,6 +69,20 @@ public class BlogServiceImpl implements BlogService{
     @Override
     public Page<Blog> listBlog(String query, Pageable pageable) {
         return blogRepository.findByQuery(query,pageable);
+    }
+
+    @Override
+    public Blog getAndCovert(Long id) {
+        Blog blog = blogRepository.getById(id);
+        if(blog==null){
+            throw new NotFoundException("该博客不存在");
+        }
+        Blog blog1 = new Blog();
+        BeanUtils.copyProperties(blog,blog1);
+        String content = blog1.getContent();
+        String htmlExtensions = MarkdownUtils.markdownToHtmlExtensions(content);
+        blog1.setContent(htmlExtensions);
+        return blog1;
     }
 
     @Override

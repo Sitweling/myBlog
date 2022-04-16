@@ -21,7 +21,8 @@ public interface BlogService {
 
     Page<Blog> listBlog(String query ,Pageable pageable);
 
-
+    //专门用于Markdown语法的转换
+    Blog getAndCovert(Long id);
 
     Blog saveBlog(Blog blog);
 

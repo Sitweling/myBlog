@@ -42,33 +42,33 @@
             <div class="ui top attached segment">
                 <div class="ui horizontal link list">
                     <div class="item">
-                        <img src="https://picsum.photos/id/110/150/200" alt="" class="ui avatar image">
+                        <img src="https://picsum.photos/id/110/150/200" th:src="@{${blog.user.avatar}}" alt="" class="ui avatar image">
                         <div class="content">
-                            <div class="header ">
+                            <div class="header " th:text="${blog.user.nickname}" >
                                 LKA
                             </div>
                         </div>
                     </div>
                     <div class="item">
-                        <i class="calendar icon"></i> 2022-3-29
+                        <i class="calendar icon"></i> <span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd')}">2022-3-29</span>
                     </div>
                     <div class="item">
-                        <i class="eye icon"></i> 2345
+                        <i class="eye icon"></i> <span th:text="${blog.views}">2345</span>
                     </div>
                 </div>
             </div>
             <div class="ui attached segment">
                <!-- 图区-->
-                <img src="https://picsum.photos/id/120/800/450" alt="" class="ui fluid rounded image">
+                <img src="https://picsum.photos/id/120/800/450" alt="" th:src="@{${blog.firstPicture}}" class="ui fluid rounded image">
             </div>
             <div class="ui  attached segment">
                 <!--内容-->
                 <div class="ui right aligned basic segment">
-                    <div class="ui orange basic label">原创</div>
+                    <div class="ui orange basic label" th:text="${blog.flag}">原创</div>
                 </div>
-                <h2 class="ui centered align header">标题</h2>
+                <h2 class="ui centered align header" th:text="${blog.title}" >标题</h2>
                 <br>
-                <div id="content" class="js-toc-content typo typo-selection m-padded-lr-responsive m-padded-tb">
+                <div id="content" th:utext="${blog.content}" class="js-toc-content typo typo-selection m-padded-lr-responsive m-padded-tb">
                     <h1>中文网页重设与排版：<i class="serif">Typo.css</i></h1><br/>
 
                     <h2 id="tagline" class="serif">一致化浏览器排版效果，构建最适合中文阅读的网页排版</h2>
@@ -452,7 +452,7 @@ h5,h6{font-size:1em;}
 
                 <!--标签-->
                 <div class="m-padded-lr">
-                    <div class="ui basic teal left pointing label">方法论</div>
+                    <div class="ui basic teal left pointing label" th:each="tag : ${blog.tags}" th:text="${tag.name}">方法论</div>
                 </div>
 
                 <!--赞赏-->
@@ -477,8 +477,8 @@ h5,h6{font-size:1em;}
                 <div class="ui grid">
                     <div class="eleven wide column">
                         <ul class="list">
-                            <li>作者：Sitweling(联系作者)</li>
-                            <li>发表时间：2022/3/29</li>
+                            <li>作者：<span th:text="${blog.user.nickname}"><a href="#" th:href="@{/about}"> Sitweling</a></span> (联系作者)</li>
+                            <li>发表时间：<span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd HH:mm')}">2022/3/29</span> </li>
                             <li>第一次上线测试</li>
                         </ul>
                     </div>
@@ -647,7 +647,7 @@ h5,h6{font-size:1em;}
 <th:block th:replace="_fragments :: script">
 
 </th:block>
-    <script>
+    <script th:inline="javascript">
         $('.menu.toggle').click(function (){
              $('.m-item').toggleClass('m-mobile-hide');
         });
@@ -657,6 +657,7 @@ h5,h6{font-size:1em;}
             on: 'click',
             position: 'bottom center'
         });
+
 
         tocbot.init({
             // Where to render the table of contents.
@@ -680,8 +681,11 @@ h5,h6{font-size:1em;}
             on: 'hover',
             position: 'left center'
         });
+
+        var serurl = /*[[#{blog.serurl}]]*/"127.0.0.1:8080";
+        var url = /*[[@{/blog/{id}(id=${blog.id})}]]*/"";
         const qrcode = new QRCode(document.getElementById("wechat-qr"), {
-            text: "http://jindo.dev.naver.com/collie",
+            text: serurl+url,
             width: 110,
             height: 110,
             colorDark: "#000000",
