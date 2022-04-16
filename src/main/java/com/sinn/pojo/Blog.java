@@ -25,6 +25,8 @@ public class Blog {
     private boolean shareStatement;
     private boolean commentabled;
     private boolean published;
+
+    private String description;
     private boolean recommend;
     @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;
@@ -52,6 +54,7 @@ public class Blog {
                 ", shareStatement=" + shareStatement +
                 ", commentabled=" + commentabled +
                 ", published=" + published +
+                ", description='" + description + '\'' +
                 ", recommend=" + recommend +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
@@ -61,6 +64,14 @@ public class Blog {
                 ", user=" + user +
                 ", comments=" + comments +
                 '}';
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getTagIds() {

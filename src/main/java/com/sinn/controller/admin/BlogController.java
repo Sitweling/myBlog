@@ -53,7 +53,6 @@ public class BlogController {
     @PostMapping("/blogs/search")
     public String search(@PageableDefault(size = 5,sort = {"updateTime"},direction = Sort.Direction.DESC) Pageable pageable, BlogQuery blog, Model model){
         model.addAttribute("page",blogService.listBlog(pageable,blog));
-        System.out.println("查询了");
         return "admin/blogs :: blogList";
     }
 
@@ -83,7 +82,12 @@ public class BlogController {
         blog.setUser(user);
         blog.setType(typeService.getType(blog.getType().getId()));
         blog.setTags(tagService.listTag(blog.getTagIds()));
-        Blog saveBlog = blogService.saveBlog(blog);
+        Blog saveBlog;
+        if(blog.getId()==null){
+            saveBlog = blogService.saveBlog(blog);
+        }else{
+            saveBlog=blogService.updateBlog(blog.getId(), blog);
+        }
         if(saveBlog!=null){
             attributes.addFlashAttribute("msg","操作成功 ");
         }else{
