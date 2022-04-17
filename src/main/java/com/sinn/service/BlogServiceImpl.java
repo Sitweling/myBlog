@@ -72,6 +72,7 @@ public class BlogServiceImpl implements BlogService{
     }
 
     @Override
+    @Transactional
     public Blog getAndCovert(Long id) {
         Blog blog = blogRepository.getById(id);
         if(blog==null){
@@ -82,6 +83,7 @@ public class BlogServiceImpl implements BlogService{
         String content = blog1.getContent();
         String htmlExtensions = MarkdownUtils.markdownToHtmlExtensions(content);
         blog1.setContent(htmlExtensions);
+        blogRepository.updateViews(id);
         return blog1;
     }
 

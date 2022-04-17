@@ -355,3 +355,107 @@ org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property o
 2022-04-17 19:05:45.174  INFO 17368 --- [http-nio-8080-exec-3] com.sinn.aspect.LogAspect                : Request : RequestLog{url='http://localhost:8080/comments/3', ip='0:0:0:0:0:0:0:1', classMethod='com.sinn.controller.CommentController.comments', args=[3, {}]}
 2022-04-17 19:05:45.189  INFO 17368 --- [http-nio-8080-exec-3] com.sinn.aspect.LogAspect                : Result : blog :: commentList
 2022-04-17 19:05:45.189  INFO 17368 --- [http-nio-8080-exec-3] com.sinn.aspect.LogAspect                : ----------doAfter----------
+2022-04-17 19:20:30.113  INFO 17636 --- [restartedMain] com.sinn.MyBlogApplication               : Starting MyBlogApplication using Java 11.0.14 on Si-Sarura with PID 17636 (D:\program_Code\myBlog\target\classes started by Sitweling in D:\program_Code\myBlog)
+2022-04-17 19:20:30.114 DEBUG 17636 --- [restartedMain] com.sinn.MyBlogApplication               : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-17 19:20:30.114  INFO 17636 --- [restartedMain] com.sinn.MyBlogApplication               : The following 1 profile is active: "dev"
+2022-04-17 19:20:30.156  INFO 17636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-17 19:20:30.156  INFO 17636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-17 19:20:30.742  INFO 17636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-17 19:20:30.802  INFO 17636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 5 JPA repository interfaces.
+2022-04-17 19:20:30.900  WARN 17636 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.sinn]' package. Please check your configuration.
+2022-04-17 19:20:31.401  INFO 17636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-17 19:20:31.410  INFO 17636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-17 19:20:31.410  INFO 17636 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-17 19:20:31.483  INFO 17636 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-17 19:20:31.484  INFO 17636 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1327 ms
+2022-04-17 19:20:31.662  INFO 17636 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-17 19:20:31.692  INFO 17636 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-17 19:20:31.781  INFO 17636 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-17 19:20:31.845  INFO 17636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-17 19:20:32.069  INFO 17636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-17 19:20:32.082  INFO 17636 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-04-17 19:20:32.620  INFO 17636 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-17 19:20:32.627  INFO 17636 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-17 19:20:33.370  WARN 17636 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-17 19:20:33.659  INFO 17636 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-17 19:20:34.007  INFO 17636 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-17 19:20:34.039  INFO 17636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-17 19:20:34.048  INFO 17636 --- [restartedMain] com.sinn.MyBlogApplication               : Started MyBlogApplication in 4.336 seconds (JVM running for 5.613)
+2022-04-17 19:20:34.084  INFO 17636 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-17 19:20:34.085  INFO 17636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-17 19:20:34.086  INFO 17636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-17 19:20:38.578  WARN 17636 --- [http-nio-8080-exec-9] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [794] milliseconds.
+2022-04-17 19:20:40.717  INFO 17636 --- [http-nio-8080-exec-3] com.sinn.aspect.LogAspect                : Request : RequestLog{url='http://localhost:8080/blog/3', ip='0:0:0:0:0:0:0:1', classMethod='com.sinn.controller.indexController.blog', args=[3, {}]}
+2022-04-17 19:20:40.783  INFO 17636 --- [http-nio-8080-exec-3] com.sinn.aspect.LogAspect                : Result : blog
+2022-04-17 19:20:40.783  INFO 17636 --- [http-nio-8080-exec-3] com.sinn.aspect.LogAspect                : ----------doAfter----------
+2022-04-17 19:20:41.358  INFO 17636 --- [http-nio-8080-exec-6] com.sinn.aspect.LogAspect                : Request : RequestLog{url='http://localhost:8080/comments/3', ip='127.0.0.1', classMethod='com.sinn.controller.CommentController.comments', args=[3, {}]}
+2022-04-17 19:20:41.396  INFO 17636 --- [http-nio-8080-exec-6] com.sinn.aspect.LogAspect                : Result : blog :: commentList
+2022-04-17 19:20:41.396  INFO 17636 --- [http-nio-8080-exec-6] com.sinn.aspect.LogAspect                : ----------doAfter----------
+2022-04-17 19:21:11.004  INFO 17636 --- [http-nio-8080-exec-10] com.sinn.aspect.LogAspect                : Request : RequestLog{url='http://localhost:8080/comments', ip='127.0.0.1', classMethod='com.sinn.controller.CommentController.post', args=[Comment{id=null, nickname='sinn', email='937019004@qq.com', content='吾为天帝，当镇压世间一切敌', avatar='null', createTime=null, blog=Blog{id=3, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=false, shareStatement=false, commentabled=false, published=false, description='null', recommend=false, createTime=null, updateTime=null, type=null, tags=[], tagIds='null', user=null, comments=[]}, replyComments=[], parentComment=Comment{id=-1, nickname='null', email='null', content='null', avatar='null', createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@524c6737]}
+2022-04-17 19:21:11.054  INFO 17636 --- [http-nio-8080-exec-10] com.sinn.aspect.LogAspect                : Result : redirect:/comments/3
+2022-04-17 19:21:11.054  INFO 17636 --- [http-nio-8080-exec-10] com.sinn.aspect.LogAspect                : ----------doAfter----------
+2022-04-17 19:21:11.063  INFO 17636 --- [http-nio-8080-exec-1] com.sinn.aspect.LogAspect                : Request : RequestLog{url='http://localhost:8080/comments/3', ip='127.0.0.1', classMethod='com.sinn.controller.CommentController.comments', args=[3, {}]}
+2022-04-17 19:21:11.078  INFO 17636 --- [http-nio-8080-exec-1] com.sinn.aspect.LogAspect                : Result : blog :: commentList
+2022-04-17 19:21:11.078  INFO 17636 --- [http-nio-8080-exec-1] com.sinn.aspect.LogAspect                : ----------doAfter----------
+2022-04-17 19:21:26.079  INFO 17636 --- [http-nio-8080-exec-4] com.sinn.aspect.LogAspect                : Request : RequestLog{url='http://localhost:8080/comments', ip='127.0.0.1', classMethod='com.sinn.controller.CommentController.post', args=[Comment{id=null, nickname='sinn', email='937019004@qq.com', content='第四层嵌套测试', avatar='null', createTime=null, blog=Blog{id=3, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=false, shareStatement=false, commentabled=false, published=false, description='null', recommend=false, createTime=null, updateTime=null, type=null, tags=[], tagIds='null', user=null, comments=[]}, replyComments=[], parentComment=Comment{id=4, nickname='null', email='null', content='null', avatar='null', createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@524c6737]}
+2022-04-17 19:21:26.087  INFO 17636 --- [http-nio-8080-exec-4] com.sinn.aspect.LogAspect                : Result : redirect:/comments/3
+2022-04-17 19:21:26.087  INFO 17636 --- [http-nio-8080-exec-4] com.sinn.aspect.LogAspect                : ----------doAfter----------
+2022-04-17 19:21:26.092  INFO 17636 --- [http-nio-8080-exec-3] com.sinn.aspect.LogAspect                : Request : RequestLog{url='http://localhost:8080/comments/3', ip='127.0.0.1', classMethod='com.sinn.controller.CommentController.comments', args=[3, {}]}
+2022-04-17 19:21:26.110  INFO 17636 --- [http-nio-8080-exec-3] com.sinn.aspect.LogAspect                : Result : blog :: commentList
+2022-04-17 19:21:26.110  INFO 17636 --- [http-nio-8080-exec-3] com.sinn.aspect.LogAspect                : ----------doAfter----------
+2022-04-17 19:22:11.152  INFO 17636 --- [http-nio-8080-exec-9] com.sinn.aspect.LogAspect                : Request : RequestLog{url='http://localhost:8080/blog/3', ip='127.0.0.1', classMethod='com.sinn.controller.indexController.blog', args=[3, {}]}
+2022-04-17 19:22:11.159  INFO 17636 --- [http-nio-8080-exec-9] com.sinn.aspect.LogAspect                : Result : blog
+2022-04-17 19:22:11.159  INFO 17636 --- [http-nio-8080-exec-9] com.sinn.aspect.LogAspect                : ----------doAfter----------
+2022-04-17 19:22:11.637  INFO 17636 --- [http-nio-8080-exec-6] com.sinn.aspect.LogAspect                : Request : RequestLog{url='http://localhost:8080/comments/3', ip='0:0:0:0:0:0:0:1', classMethod='com.sinn.controller.CommentController.comments', args=[3, {}]}
+2022-04-17 19:22:11.656  INFO 17636 --- [http-nio-8080-exec-6] com.sinn.aspect.LogAspect                : Result : blog :: commentList
+2022-04-17 19:22:11.657  INFO 17636 --- [http-nio-8080-exec-6] com.sinn.aspect.LogAspect                : ----------doAfter----------
+2022-04-17 19:26:14.279  INFO 17636 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-17 19:26:14.281  INFO 17636 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-17 19:26:14.293  INFO 17636 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-17 19:26:19.247  INFO 12976 --- [restartedMain] com.sinn.MyBlogApplication               : Starting MyBlogApplication using Java 11.0.14 on Si-Sarura with PID 12976 (D:\program_Code\myBlog\target\classes started by Sitweling in D:\program_Code\myBlog)
+2022-04-17 19:26:19.248 DEBUG 12976 --- [restartedMain] com.sinn.MyBlogApplication               : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-17 19:26:19.248  INFO 12976 --- [restartedMain] com.sinn.MyBlogApplication               : The following 1 profile is active: "dev"
+2022-04-17 19:26:19.281  INFO 12976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-17 19:26:19.281  INFO 12976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-17 19:26:19.892  INFO 12976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-17 19:26:19.952  INFO 12976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 5 JPA repository interfaces.
+2022-04-17 19:26:20.046  WARN 12976 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.sinn]' package. Please check your configuration.
+2022-04-17 19:26:20.514  INFO 12976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-17 19:26:20.520  INFO 12976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-17 19:26:20.520  INFO 12976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-17 19:26:20.584  INFO 12976 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-17 19:26:20.585  INFO 12976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1304 ms
+2022-04-17 19:26:20.736  INFO 12976 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-17 19:26:20.774  INFO 12976 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-17 19:26:20.872  INFO 12976 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-17 19:26:20.944  INFO 12976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-17 19:26:21.154  INFO 12976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-17 19:26:21.167  INFO 12976 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-04-17 19:26:21.664  INFO 12976 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-17 19:26:21.670  INFO 12976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-17 19:26:22.359  WARN 12976 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-17 19:26:22.586  INFO 12976 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-17 19:26:22.893  INFO 12976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-17 19:26:22.929  INFO 12976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-17 19:26:22.938  INFO 12976 --- [restartedMain] com.sinn.MyBlogApplication               : Started MyBlogApplication in 4.117 seconds (JVM running for 5.528)
+2022-04-17 19:26:30.212  INFO 12976 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-17 19:26:30.213  INFO 12976 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-17 19:26:30.213  INFO 12976 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-04-17 19:26:30.242  INFO 12976 --- [http-nio-8080-exec-2] com.sinn.aspect.LogAspect                : Request : RequestLog{url='http://localhost:8080/blog/3', ip='0:0:0:0:0:0:0:1', classMethod='com.sinn.controller.indexController.blog', args=[3, {}]}
+2022-04-17 19:26:30.350  INFO 12976 --- [http-nio-8080-exec-2] com.sinn.aspect.LogAspect                : Result : blog
+2022-04-17 19:26:30.350  INFO 12976 --- [http-nio-8080-exec-2] com.sinn.aspect.LogAspect                : ----------doAfter----------
+2022-04-17 19:26:31.057  INFO 12976 --- [http-nio-8080-exec-3] com.sinn.aspect.LogAspect                : Request : RequestLog{url='http://localhost:8080/comments/3', ip='0:0:0:0:0:0:0:1', classMethod='com.sinn.controller.CommentController.comments', args=[3, {}]}
+2022-04-17 19:26:31.099  INFO 12976 --- [http-nio-8080-exec-3] com.sinn.aspect.LogAspect                : Result : blog :: commentList
+2022-04-17 19:26:31.099  INFO 12976 --- [http-nio-8080-exec-3] com.sinn.aspect.LogAspect                : ----------doAfter----------
+2022-04-17 19:26:32.677  INFO 12976 --- [http-nio-8080-exec-1] com.sinn.aspect.LogAspect                : Request : RequestLog{url='http://localhost:8080/blog/3', ip='0:0:0:0:0:0:0:1', classMethod='com.sinn.controller.indexController.blog', args=[3, {}]}
+2022-04-17 19:26:32.687  INFO 12976 --- [http-nio-8080-exec-1] com.sinn.aspect.LogAspect                : Result : blog
+2022-04-17 19:26:32.687  INFO 12976 --- [http-nio-8080-exec-1] com.sinn.aspect.LogAspect                : ----------doAfter----------
+2022-04-17 19:26:33.063  INFO 12976 --- [http-nio-8080-exec-2] com.sinn.aspect.LogAspect                : Request : RequestLog{url='http://localhost:8080/comments/3', ip='0:0:0:0:0:0:0:1', classMethod='com.sinn.controller.CommentController.comments', args=[3, {}]}
+2022-04-17 19:26:33.081  INFO 12976 --- [http-nio-8080-exec-2] com.sinn.aspect.LogAspect                : Result : blog :: commentList
+2022-04-17 19:26:33.082  INFO 12976 --- [http-nio-8080-exec-2] com.sinn.aspect.LogAspect                : ----------doAfter----------
+2022-04-17 19:26:34.672  INFO 12976 --- [http-nio-8080-exec-9] com.sinn.aspect.LogAspect                : Request : RequestLog{url='http://localhost:8080/blog/3', ip='0:0:0:0:0:0:0:1', classMethod='com.sinn.controller.indexController.blog', args=[3, {}]}
+2022-04-17 19:26:34.680  INFO 12976 --- [http-nio-8080-exec-9] com.sinn.aspect.LogAspect                : Result : blog
+2022-04-17 19:26:34.680  INFO 12976 --- [http-nio-8080-exec-9] com.sinn.aspect.LogAspect                : ----------doAfter----------
+2022-04-17 19:26:35.075  INFO 12976 --- [http-nio-8080-exec-10] com.sinn.aspect.LogAspect                : Request : RequestLog{url='http://localhost:8080/comments/3', ip='0:0:0:0:0:0:0:1', classMethod='com.sinn.controller.CommentController.comments', args=[3, {}]}
+2022-04-17 19:26:35.094  INFO 12976 --- [http-nio-8080-exec-10] com.sinn.aspect.LogAspect                : Result : blog :: commentList
+2022-04-17 19:26:35.094  INFO 12976 --- [http-nio-8080-exec-10] com.sinn.aspect.LogAspect                : ----------doAfter----------
