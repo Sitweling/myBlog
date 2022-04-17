@@ -57,4 +57,15 @@ public class indexController {
         model.addAttribute("blog",blogService.getAndCovert(id));
         return "blog";
     }
+
+    @RequestMapping("/about")
+    public String about(){
+        return "/about";
+    }
+
+    @GetMapping("/footer/newBlog")
+    public String newBlogs(Model model){
+        model.addAttribute("newBlogs",blogService.listRecommendBlogTop(3));
+        return "_fragments :: newBlogList";
+    }
 }
