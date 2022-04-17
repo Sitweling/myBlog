@@ -456,9 +456,12 @@ h5,h6{font-size:1em;}
                 </div>
 
                 <!--赞赏-->
-                <div class="ui center aligned segment basic">
-                    <button id="payButton" class="ui basic orange circular button">赞赏</button>
+                <div th:if="${blog.appreciation}">
+                    <div class="ui center aligned segment basic">
+                        <button id="payButton" class="ui basic orange circular button">赞赏</button>
+                    </div>
                 </div>
+
                 <div class="ui payQR flowing popup transition hidden">
                     <div class="ui orange basic label">
                         <div class="ui images" style="font-size: inherit !important;">
@@ -472,7 +475,7 @@ h5,h6{font-size:1em;}
 
                 
             </div>
-            <div class="attached ui message positive">
+            <div class="attached ui message positive" th:if="${blog.shareStatement}">
                 <!--博客信息-->
                 <div class="ui grid">
                     <div class="eleven wide column">
@@ -488,7 +491,7 @@ h5,h6{font-size:1em;}
                 </div>
             </div>
 
-            <div  class="ui bottom attached segment">
+            <div  class="ui bottom attached segment" th:if="${blog.commentabled}">
                 <!--留言区域-->
                 <div id="comment-container" class="ui teal segment">
                     <div th:fragment="commentList">
@@ -591,7 +594,7 @@ h5,h6{font-size:1em;}
                         </div>
                     </div>
 
-                </div>
+                </div >
                 <!--提交留言区域-->
                 <div class="ui form" id="comment-form">
                     <input type="hidden" name="blog.id" th:value="${blog.id}">
